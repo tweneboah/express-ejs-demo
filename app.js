@@ -20,6 +20,17 @@ app.get('/', (req, res) => {
   res.render('welcome', { title: 'Welcome' });
 });
 
+// About route
+app.get('/about', (req, res) => {
+  const appInfo = {
+    name: 'Express EJS App',
+    version: '1.0.0',
+    description: 'Express.js application with EJS template engine',
+    techStack: ['Node.js', 'Express.js', 'EJS', 'JavaScript']
+  };
+  res.render('about', { title: 'About', appInfo });
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
