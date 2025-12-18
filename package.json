@@ -1,0 +1,18 @@
+{
+  "name": "express-ejs-app",
+  "version": "1.0.0",
+  "description": "Express.js application with EJS template engine",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "keywords": ["express", "ejs", "node"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9"
+  }
+}
+
